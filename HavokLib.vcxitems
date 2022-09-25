@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -12,5 +12,105 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\havok_api.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\havok_xml.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_animatedreferenceframe.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_animation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_animationbinding.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_animationcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_annotationtrack.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_boneattachment.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_meshbinding.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hka_skeleton.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hkx_environment.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hk_base.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hk_packfile.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hk_rootlevelcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hklib\hk_settings.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\custom\hka_losslesscompressedanimation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_animatedreferenceframe.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_animation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_animationbinding.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_animationcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_annotationtrack.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_defaultanimrefframe.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_deltaanimation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_interleavedanimation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_skeleton.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_splineanimation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hka_waveletanimation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hkx_environment.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hk_internal_api.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\internal\hk_rootlevelcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hka_animationcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hka_skeleton.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hkx_environment.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hk_core.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hk_packfile.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)python\hk_rootlevelcontainer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\fixups.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\format_new.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\format_old.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\hka_decompressor.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\hka_delta_decompressor.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\hka_spline_decompressor.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\packfile\base.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\packfile\hka_animated_reference_frame.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\packfile\reflector_util.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)source\toolset.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\hka_animationcontainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\hka_skeleton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\hkx_environment.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\hk_packfile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\hk_rootlevelcontainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)python\module.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\core_motion.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\core_registry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\format_new.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\format_old.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\hka_delta_decompressor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\hka_spline_decompressor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\hk_packfile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\custom\hka_losslesscompressedanimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animated_reference_frame_default.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_binding.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_container.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_delta.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_interleaved.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_spline.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_wavelet.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hka_skeleton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hkx_environment.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\packfile\hk_rootlevelcontainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)source\xml\base.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\custom\hka_animation_lossless_compressed.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animated_reference_frame.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animated_reference_frame_default.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_binding.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_container.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_delta.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_interleaved.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_spline.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_animation_wavelet.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hka_skeleton.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hkx_environment.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hk_base.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\packfile\hk_rootlevelcontainer.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_animation.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_animationbinding.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_animationcontainer.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_annotationtrack.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_interleavedanimation.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hka_skeleton.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hkx_environment.inl" />
+    <None Include="$(MSBuildThisFileDirectory)source\xml\hk_rootlevelcontainer.inl" />
   </ItemGroup>
 </Project>
